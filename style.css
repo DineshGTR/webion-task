@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  height: 100vh;
+  background-image: url(img/Background\ Hero.svg);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  background-attachment: scroll;
+  justify-content: center;
+}
+
+.header-content h1 {
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+  font-size: 3.8rem;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  max-width: 50%;
+  color: gray;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.nav-links {
+  width: 70%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 9px;
+  background-color: black;
+}
+
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  color: rgb(229, 244, 18);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 5px;
+  border-left: 50px;
+}
+
+.btn {
+  border-radius: 30px;
+  background: yellow;
+  padding: 15px 25px;
+  margin: 20px auto;
+  display: block;
+  color: black;
+  font-size: 1.rem;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, serif;
+}
+
+section {
+  padding-top: 100px;
+  height: auto;
+  background-color: rgb(11, 11, 11);
+  background-size: cover;
+  background-position: bottom;
+}
+
+.h1class {
+  color: white;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 50px 40px;
+}
+
+.logos1,
+.logos2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.logo1,
+.logo2 {
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+}
+
+.logos1 img,
+.logos2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn2 {
+  border-radius: 30px;
+  background: yellow;
+  padding: 10px 20px;
+  margin: 20px auto;
+  display: block;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.page3 h4 {
+  margin-top: 60px;
+  color: rgb(131, 185, 238);
+  font-size: 0.9em;
+  font-weight: 1000;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.page3 h1 {
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+  font-size: 3.5rem;
+  padding: 20px;
+  text-align: center;
+}
+.sidecard {
+  display: flex;
+  margin-top: 50px;
+  width: 100%;
+}
+.Certificate {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.cardheader {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.content {
+  color: white;
+}
+.cardmove {
+  margin-left: 20px;
+}
+.cardcenter {
+  width: 35%;
+  margin-left: 110px;
+  margin-top: 25px;
+}
+.cardcenter1 {
+  margin-left: 130px;
+  width: 50%;
+}
+.textstyle {
+  color: wheat;
+  font-weight: bold;
+  justify-content: center;
+  font-size: 45px;
+  padding: 50px;
+  display: grid;
+}
+.textstyle2 {
+  color: wheat;
+  font-size: 25px;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+}
+.Studentsflex {
+  display: flex;
+  color: black;
+  margin-right: 10px;
+  gap: 30px;
+  justify-content: center;
+}
+
+.studentbadge {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 5px;
+  justify-content: center;
+  display: flex;
+}
+.studentext {
+  font-size: 60px;
+  color: wheat;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+.footer {
+  color: white;
+  justify-content: center;
+  display: grid;
+  justify-items: center;
+  gap: 20px;
+  padding: 25px;
+}
+.LearnHub {
+  color: yellow;
+  font-size: 30px;
+  font-weight: bold;
+}
+.Tailwind {
+  color: #242932;
+}
+
+@media (min-width: 1200px) {
+  .header-content h1 {
+    font-size: 4rem;
+  }
+  .header-content p {
+    font-size: 1.4rem;
+    max-width: 60%;
+  }
+  .logos1 .logo1,
+  .logos2 .logo2 {
+    width: 18%;
+  }
+  .cardcenter {
+    width: 30%;
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header-content h1 {
+    font-size: 3.5rem;
+  }
+  .header-content p {
+    font-size: 1.3rem;
+  }
+  .logos1 .logo1,
+  .logos2 .logo2 {
+    width: 22%;
+  }
+  .cardcenter {
+    width: 35%;
+    margin-left: 80px;
+  }
+  .textstyle {
+    font-size: 40px;
+  }
+  .textstyle2 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-content h1 {
+    font-size: 3rem;
+  }
+  .header-content p {
+    font-size: 1.2rem;
+    max-width: 70%;
+  }
+  .logos1 .logo1,
+  .logos2 .logo2 {
+    width: 25%;
+  }
+  .cardcenter {
+    width: 40%;
+    margin-left: 50px;
+  }
+  .textstyle {
+    font-size: 35px;
+  }
+  .textstyle2 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+    padding: 10px;
+  }
+  .header-content p {
+    font-size: 1rem;
+    max-width: 80%;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 90%;
+    padding: 10px;
+  }
+  .logos1 .logo1,
+  .logos2 .logo2 {
+    width: 35%;
+  }
+  .cardcenter {
+    width: 60%;
+    margin-left: 20px;
+  }
+  .textstyle {
+    font-size: 30px;
+    padding: 20px;
+  }
+  .textstyle2 {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .Studentsflex {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-content h1 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .header-content p {
+    font-size: 0.9rem;
+    max-width: 90%;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  .logos1 .logo1,
+  .logos2 .logo2 {
+    width: 50%;
+  }
+  .cardcenter {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .textstyle {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .textstyle2 {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .Studentsflex {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .studentext {
+    font-size: 40px;
+  }
+}
